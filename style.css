@@ -1,0 +1,51 @@
+/* Base styles */
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .clock {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+    border: 5px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .time {
+    display: inline-block;
+  }
+  
+  /* Mobile styles */
+  .clock {
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Tablet styles */
+  @media screen and (min-width: 768px) {
+    .clock {
+      font-size: 4rem;
+      padding: 15px;
+    }
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 992px) {
+    .clock {
+      font-size: 5rem;
+      padding: 20px;
+    }
+  }
+  
+  /* Hover styles */
+  .clock:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
